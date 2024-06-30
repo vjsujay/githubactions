@@ -1,14 +1,15 @@
 name: hello-world-GithubActions
 on: push
-jobs: hello-job
-  runs-on: ubuntu-latest
-  steps:
-  - name: first step in this workflow
-    run: echo "First step in this workflow"
-  - name: Printing the steps 2 to 5
-    run: |
-      echo "Step 2"
-      echo "Step 3"
-      echo "step 4"
-      echo "Step 5"
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: first step in this workflow
+      run: echo "First step in this workflow"
+    - name: Printing the steps 2 to 5
+      run: |
+        echo "Step 2"
+        echo "Step 3"
+        echo "step 4"
+        echo "Step 5"
       
